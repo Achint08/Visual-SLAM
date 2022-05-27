@@ -1,3 +1,7 @@
+# Set(CMAKE_BUILD_TYPE "Debug")
 cmake_minimum_required(VERSION 2.8)
 project(VisualSLAM)
-add_executable(slam slam.cpp)
+cmake_policy(SET CMP0042 NEW)
+add_library(slam_shared SHARED slam.cpp)
+add_executable(main main.cpp)
+target_link_libraries(main slam_shared)
