@@ -2,7 +2,12 @@
 
 Implementing SLAM from scratch in C++
 
-# How to Build
+## Dependencies
+
+- Pangolin
+- Eigen
+
+## How to Build
 
 ```
 $ mkdir build
