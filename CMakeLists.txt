@@ -5,5 +5,7 @@ cmake_policy(SET CMP0042 NEW)
 add_library(slam_shared SHARED slam.cpp)
 add_executable(main main.cpp)
 target_link_libraries(main slam_shared)
+# Change this for specific OS
 include_directories("/opt/homebrew/Cellar/eigen/3.4.0_1/include/eigen3/")
 add_executable(eigenmatrix eigenMatrix.cpp)
+add_executable(eigenGeometry eigenGeometry.cpp)
