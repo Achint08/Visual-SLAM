@@ -1,10 +1,10 @@
 # Set(CMAKE_BUILD_TYPE "Debug")
 
-find_package(Sophus REQUIRED)
+# find_package(Sophus REQUIRED)
 
-INCLUDE_DIRECTORIES(
-    ${SOPHUS_INCLUDE_DIR}
-)
+# INCLUDE_DIRECTORIES(
+#     ${SOPHUS_INCLUDE_DIR}
+# )
 cmake_minimum_required(VERSION 2.8)
 project(VisualSLAM)
 cmake_policy(SET CMP0042 NEW)
@@ -17,4 +17,4 @@ target_link_libraries(main slam_shared)
 add_executable(eigenmatrix eigenMatrix.cpp)
 add_executable(eigenGeometry eigenGeometry.cpp)
 add_executable(plotTrajectory plotTrajectory.cpp)
-add_executable((optimization optimization.cpp))
+add_executable(optimization optimization.cpp)
