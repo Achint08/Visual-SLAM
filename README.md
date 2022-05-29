@@ -4,8 +4,9 @@ Implementing SLAM from scratch in C++
 
 ## Dependencies
 
-- Pangolin
-- Eigen
+- Pangolin (For visualization)
+- Eigen (For linear algebra and geometry)
+- Sophus (Lie Algebra for optimization)
 
 ## How to Build
 
