@@ -7,6 +7,7 @@ Implementing SLAM from scratch in C++
 - Pangolin (For visualization)
 - Eigen (For linear algebra and geometry)
 - Sophus (Lie Algebra for optimization)
+- OpenCV (For image processing)
 
 ## How to Build
 
