@@ -29,6 +29,7 @@ add_executable(trajectoryError trajectoryError.cpp)
 add_executable(image image.cpp)
 add_executable(undistortion undistortion.cpp)
 add_executable(rgbdvision rgbdvision.cpp)
+add_executable(gaussNewton gaussNewton.cpp)
 
 #Update accordingly
 # target_link_libraries(eigenmatrix eigen3)
@@ -44,3 +45,5 @@ add_executable(rgbdvision rgbdvision.cpp)
 # target_link_libraries(rgbdvision ${pangolin_LIBRARIES})
 # target_link_libraries(rgbdvision sophus)
 # target_link_libraries(rgbdvision eigen3)
+# target_link_libraries(gaussNewton eigen3)
+# target_link_libraries(gaussNewton ${OpenCV_LIBRARIES})
